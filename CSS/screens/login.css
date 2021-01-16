@@ -34,8 +34,18 @@
   color: rgb(0, 0, 0, 0.4);
 }
 #login-form input:not([type="submit"]):focus {
-  border-bottom: 1.5px solid var(--yellow);
+  animation: twingcle 0.2s linear infinite;
 }
+
+@keyframes twingcle {
+  from {
+    border-bottom: 1.5px solid var(--yellow);
+  }
+  to {
+    border-bottom: 1.5px solid white;
+  }
+}
+
 #login-form input[type="submit"] {
   background-color: var(--yellow);
   cursor: pointer;

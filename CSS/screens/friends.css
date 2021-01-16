@@ -49,3 +49,22 @@
   animation: hidesplashscreen 0.4s ease-in-out forwards;
   animation-delay: 2s;
 }
+
+@keyframes tornado {
+  0% {
+    transform: scale(2);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+.splash-screen i {
+  animation: tornado 5s linear;
+}

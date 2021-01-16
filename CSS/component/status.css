@@ -4,7 +4,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 5px 3px;
+  padding: 8px 8px;
+  box-sizing: border-box;
 }
 .status-bar__column {
   width: 33%;
@@ -23,4 +24,21 @@
 }
 .status-bar__column .fa-battery-full {
   margin: 0px 5px;
+}
+
+@keyframes boltup {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fa-bolt {
+  color: var(--yellow);
+  animation: boltup 1s linear infinite;
 }

@@ -36,9 +36,9 @@
 .chat__timestamp {
   color: white;
   background-color: #92a4b2;
-  padding: 15px;
+  padding: 15px 25px;
   border-radius: 25px;
-  font-size: 17px;
+  font-size: 13px;
   margin-bottom: 25px;
 }
 .message-row {
@@ -79,8 +79,14 @@
 .message__info {
   display: flex;
   align-items: flex-end;
-  animation: disapearMessage 2s ease-in-out;
 }
+.message-row {
+  animation: disapearMessage 1.5s ease-in-out;
+}
+.message-row__last {
+  animation: disapearMessage 3s ease-in-out;
+}
+
 @keyframes disapearOwnMessage {
   from {
     transform: translateX(200px);
